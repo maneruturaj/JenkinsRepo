@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Production') {
+            steps {
+                echo 'Product is ready'
+            }
+        }
+    
+    
+      
+        stage('Testing') {
+            steps {
+                echo 'Product is successfully Tested'
+            }
+        }
+    
+      
+        stage('Deployment') {
+            steps {
+                echo 'Product  is ready to Deploy'
+            }
+        }
+    }
+}
